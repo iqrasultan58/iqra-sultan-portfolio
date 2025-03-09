@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { SiFiverr } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
 import ReactGA from "react-ga4";
+import { FaUpwork } from "react-icons/fa6";
 
 const Footer = () => {
   // Create separate states for each icon's position
@@ -11,6 +12,7 @@ const Footer = () => {
   const [youtubePosition, setYoutubePosition] = useState({ x: 0, y: 0 });
   const [snapchatPosition, setSnapchatPosition] = useState({ x: 0, y: 0 });
   const [instagramPosition, setInstagramPosition] = useState({ x: 0, y: 0 });
+  const [upworkPosition, setUpworkPosition] = useState({ x: 0, y: 0 });
 
   const handleMouse = (e, setPosition) => {
     const { clientX, clientY } = e;
@@ -68,7 +70,7 @@ const Footer = () => {
             </motion.div>
           </a>
 
-          <a onClick={() => trackClick("Fiverr")} href="" target="_blank" rel="noopener noreferrer">
+          {/* <a onClick={() => trackClick("Fiverr")} href="" target="_blank" rel="noopener noreferrer">
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setYoutubePosition)}
@@ -84,7 +86,7 @@ const Footer = () => {
             >
               <TbBrandFiverr className="text-white text-4xl sm:text-5xl" />
             </motion.div>
-          </a>
+          </a> */}
 
           <a  onClick={() => trackClick("GitHub")} href="https://github.com/iqrasultan58" target="_blank" rel="noopener noreferrer">
             <motion.div
@@ -104,7 +106,7 @@ const Footer = () => {
             </motion.div>
           </a>
 
-          <a onClick={() => trackClick("Instagram")} href="https://www.instagram.com/_iiqqraa/" target="_blank" rel="noopener noreferrer">
+          <a onClick={() => trackClick("Instagram")} href="https://www.instagram.com/_iiqqrraa/" target="_blank" rel="noopener noreferrer">
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setInstagramPosition)}
@@ -119,6 +121,24 @@ const Footer = () => {
               }}
             >
               <FaInstagram className="text-white text-4xl sm:text-5xl" />
+            </motion.div>
+          </a>
+
+          <a onClick={() => trackClick("Upwork")} href="https://www.upwork.com/freelancers/~01a562478db5ce46df" target="_blank" rel="noopener noreferrer">
+            <motion.div
+              style={{ position: "relative" }}
+              onMouseMove={(e) => handleMouse(e, setUpworkPosition)}
+              onMouseLeave={() => resetPosition(setUpworkPosition)}
+              animate={{ ...upworkPosition, scale: 1, rotate: 0 }} // Reset scale and rotation
+              whileHover={{ scale: animationProps.scale, rotate: animationProps.rotate }} // Scale and rotate on hover
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                mass: 0.1,
+              }}
+            >
+              <FaUpwork className="text-white text-4xl sm:text-5xl" />
             </motion.div>
           </a>
         </div>

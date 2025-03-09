@@ -1,14 +1,10 @@
 import React from "react";
-// import dnd from "../img/image.png";
-// import green from "../img/green.png";
-// import job from "../img/job.png";
-// import ats from "../img/projects/ats.png";
-import cheezious from "../img/projects/cheezious.jpg";
-import telbee from "../img/projects/telbee.jpg";
-import kitchenconnection from "../img/projects/kitchenconnection.jpg";
+import cheezious from "../img/projects/cheezious.gif";
+import telbee from "../img/projects/telbee.gif";
+import kitchenconnection from "../img/projects/kitchenconnection.gif";
 import yahuda from "../img/projects/yahuda.jpg";
-// import aarish from "../img/projects/next js 3.png";
-// import tasmia from "../img/tasmia.png";
+import gamesmith from "../img/projects/gamesmith1.png";
+import logo from "../img/projects/logo.jpg";
 
 const Portfolio = ({ id, title }) => {
   return (
@@ -54,18 +50,18 @@ const Portfolio = ({ id, title }) => {
 
         <a href="#" className="box" data-aos="slide-up">
           <div className="box_hover animate__fadeIn animate__animated">
-            <a href="https://security-app-alpha.vercel.app/ " target="_blank">
+            <a href="" target="_blank">
               <i class="fa-solid fa-link"></i>
             </a>
           </div>
 
-          {/* <img src={framer} alt="dnd" className="w-[100%] h-[100%]" /> */}
+          <img src={logo} alt="dnd" className="w-[100%] h-[100%]" />
         </a>
 
         <a href="#" className="box" data-aos="slide-up">
           <div className="box_hover animate__fadeIn animate__animated">
           
-            <a href="https://hgfhj101.netlify.app/ " target="_blank">
+            <a href="" target="_blank">
               <i class="fa-solid fa-link"></i>
             </a>
           </div>
@@ -76,12 +72,12 @@ const Portfolio = ({ id, title }) => {
         <a href="#" className="box" data-aos="slide-up">
           <div className="box_hover animate__fadeIn animate__animated">
          
-            <a href="https://aarish-1.netlify.app/ " target="_blank">
+            <a href="" target="_blank">
               <i class="fa-solid fa-link"></i>
             </a>
           </div>
 
-          {/* <img src={aarish} alt="dnd" className="w-[100%] h-[100%]" /> */}
+          <img src={gamesmith} alt="dnd" className="w-[100%] h-[100%]" />
         </a>
       </div>
     </div>
