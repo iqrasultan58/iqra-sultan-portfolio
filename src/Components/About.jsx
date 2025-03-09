@@ -54,7 +54,7 @@ const About = ({ id, title }) => {
 
               <div className="flex py-1">
                 <p className="pr-4 sm:pr-[18px]">Language</p>
-                <p>: English, Urdu, Punjabi</p>
+                <p>: English, Urdu</p>
               </div>
 
               <div className="pt-4 flex justify-center sm:block">
