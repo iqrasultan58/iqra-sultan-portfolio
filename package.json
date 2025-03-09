@@ -1,0 +1,48 @@
+{
+  "name": "iqra-sultan-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@material-tailwind/react": "^2.1.10",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.4.14",
+    "framer-motion": "^12.4.10",
+    "lenis": "^1.2.3",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
+    "react-icon-cloud": "^4.1.7",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.3.0",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.3",
+    "tailwindcss": "^3.4.1",
+    "web-vitals": "^4.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
