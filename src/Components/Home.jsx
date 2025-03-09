@@ -111,7 +111,7 @@ const Home = ({ id, title }) => {
             <h2
               className="my-2 text-2xl md:text-3xl lg:text-4xl typewrite  w-fit"
               data-period="2000"
-              data-type='["React Js Developer", "Full Stack Developer", "Full Stack Developer"]'
+              data-type='["Full Stack Developer"", ", "Technical Project Manager"]'
             >
               Full Stack Developer
             </h2>
