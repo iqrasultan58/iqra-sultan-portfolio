@@ -97,16 +97,16 @@ const Home = ({ id, title }) => {
           </motion.div>
         </div>
 
-        <div className="px-4 md:px-8 lg:px-16 pt-10 pb-24 home_content justify-between y">
+        <div className="px-4 md:px-8 lg:px-16 pt-10 pb-10 home_content justify-between y">
           <div className="content">
             <h4 className="text-2xl md:text-3xl lg:text-4xl py-1 ">
               Hello, I'm
             </h4>
             <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl ">
-              Iqra
+              Iqra Sultan
             </h1>
             <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl ">
-              Sultan
+              
             </h1>
             <h2
               className="my-2 text-2xl md:text-3xl lg:text-4xl typewrite  w-fit"

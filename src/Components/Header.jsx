@@ -79,7 +79,7 @@ const Header = () => {
                   Resume
                 </Link>
               </li>
-              <li className="uppercase px-4 cursor-pointer">
+              {/* <li className="uppercase px-4 cursor-pointer">
                 <Link
                   activeClass="active"
                   to="portfolio"
@@ -91,7 +91,7 @@ const Header = () => {
                 >
                   Portfolio
                 </Link>
-              </li>
+              </li> */}
               <li className="uppercase px-4 cursor-pointer">
                 <Link
                   activeClass="active"
@@ -202,7 +202,7 @@ const Header = () => {
               Resume
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link
               className="side_btn"
               activeClass="active"
@@ -218,7 +218,7 @@ const Header = () => {
               </span>
               portfolio
             </Link>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <Link
               className="side_btn"

@@ -7,7 +7,7 @@ import dp from "../img/Untitled design (3).png";
 const About = ({ id, title }) => {
   return (
     <div id={id}>
-      <div className="about pt-24 ">
+      <div className="about pt-10">
         <div className="">
           <div className="heading">
             <h4 className="main_heading">{title} Me</h4>
@@ -17,7 +17,7 @@ const About = ({ id, title }) => {
 
         <div className="px-4  md:px-8 lg:px-16 xl:px-0 xl:w-[1220px] xl:mx-auto pt-10 lg:flex lg:flex-row  md:flex-row text-white">
           <div className="mb-6 md:mb-0 " data-aos="zoom-in">
-          <img src={dp} alt="ats" className="w-[100%] h-[100%]" />
+          {/* <img src={dp} alt="ats" className="w-[100%] h-[100%]" /> */}
           </div>
 
           <div
@@ -33,12 +33,21 @@ const About = ({ id, title }) => {
             </h3>
 
             <p className="max-w-full text-[15px]">
-            I’m an experienced Full Stack Developer with a strong command of React.js, Next.js, Node.js,
-            Express.js, and MongoDB. I specialize in building robust, scalable web applications and have
-            hands-on expertise in integrating APIs, state management using Redux Toolkit, and designing
-            modern user interfaces with Material UI (MUI) and Tailwind CSS. I’m passionate about delivering
-            high-quality, performance-driven solutions that align with business goals and elevate the user
-            experience.
+              I’m a results-driven Senior Full Stack Developer with a strong background in designing
+              and developing scalable, high-performance web applications. With years of hands-on
+              experience in MERN Stack I specialize in building robust digital solutions that blend
+              functionality with exceptional user experience.
+            </p>
+            <p>
+              Beyond development, I bring strategic thinking and leadership to every project—ensuring
+              timely delivery, efficient workflows, and alignment with business goals.
+            </p>
+            <p>Having also worked in project management roles, I understand the importance of clear
+              communication, collaboration, and agile execution. Whether it’s creating custom
+              applications, managing complex integrations, or optimizing performance, I’m passionate
+              about delivering solutions that create real impact.
+
+              Let’s build something amazing together.
             </p>
 
             <div className="info pt-2">
@@ -53,7 +62,7 @@ const About = ({ id, title }) => {
               </div>
 
               <div className="flex py-1">
-                <p className="pr-4 sm:pr-[18px]">Language</p>
+                <p className="pr-4 sm:pr-[24px]">Language</p>
                 <p>: English, Urdu</p>
               </div>
 
