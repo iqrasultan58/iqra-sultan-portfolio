@@ -155,7 +155,7 @@ const Home = ({ id, title }) => {
                   className="relative mx-4"
                 >
                   <motion.a
-                    href="https://www.linkedin.com/in/iqrasultan58/"
+                    href="https://www.linkedin.com/in/iqrasultan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative p-3 rounded-full bg-blue-600 text-white flex justify-center items-center"

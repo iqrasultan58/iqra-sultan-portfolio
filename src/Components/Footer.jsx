@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-8 mb-4">
-          <a  onClick={() => trackClick("LinkedIn")} href="https://www.linkedin.com/in/iqrasultan/" target="_blank" rel="noopener noreferrer" >
+          <a  onClick={() => trackClick("LinkedIn")} href="https://www.linkedin.com/in/iqrasultan" target="_blank" rel="noopener noreferrer" >
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setLinkedinPosition)}
