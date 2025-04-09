@@ -55,7 +55,7 @@ function App() {
         <About id="about" title="About" />
         <Skills />
         <Resume id="resume" title="Resume" />
-        {/* <Portfolio id="portfolio" title="Portfolio" /> */}
+        <Portfolio id="portfolio" title="Portfolio" />
         <Contact id="contact" title="Contact" />
         <Footer />
       </div>

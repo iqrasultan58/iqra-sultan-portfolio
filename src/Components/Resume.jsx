@@ -40,11 +40,11 @@ const Resume = ({ id, title }) => {
 
           <div className="side">
             <div className="degree " data-aos="fade-up">
-              <h2>Technical Lead</h2>
+              <h2>Technical Project Manager</h2>
               <h3>Feburary 2023 - Present</h3>
               <b>Frizhub</b>
               <p>
-              As a Tech Lead, I led a cross-functional team of 15, driving Agile delivery through Scrum ceremonies and efficient backlog management using Jira and Confluence. I translated business requirements into technical tasks, managed timelines, and ensured smooth execution by resolving blockers. My strategic leadership and clear communication ensured seamless collaboration and stakeholder alignment for successful project delivery.
+              As a Tech PM, I led a cross-functional team of 15, driving Agile delivery through Scrum ceremonies and efficient backlog management using Jira and Confluence. I translated business requirements into technical tasks, managed timelines, and ensured smooth execution by resolving blockers. My strategic leadership and clear communication ensured seamless collaboration and stakeholder alignment for successful project delivery.
               </p>
             </div>
 

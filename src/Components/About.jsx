@@ -5,6 +5,7 @@ import '../App.css';
 import dp from "../img/Untitled design (3).png";
 
 const About = ({ id, title }) => {
+    
   return (
     <div id={id}>
       <div className="about pt-10">
@@ -29,7 +30,7 @@ const About = ({ id, title }) => {
             </h2>
 
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4">
-              Full Stack Developer
+              Full Stack Developer | Software Project Manager | ECommerce Specialist
             </h3>
 
             <p className="max-w-full text-[15px]">
@@ -126,6 +127,17 @@ const About = ({ id, title }) => {
               scratch using MERN stack. I excel in integrating frontend and backend components seamlessly
               delivering scalable, efficient, and user-focused solutions with high performance and quality.
               </p>
+              <div className="flex-chip">
+                <span className="chip">React JS</span>
+                <span className="chip">JavaScript</span>
+                <span className="chip">Node JS</span>
+                <span className="chip">MongoDB</span>
+                <span className="chip">HTML</span>
+                <span className="chip">CSS</span>
+                <span className="chip">Vercel</span>
+                <span className="chip">Git</span>
+                <span className="chip">Postman</span>
+              </div>
             </div>
           </motion.div>
 
@@ -160,6 +172,16 @@ const About = ({ id, title }) => {
               and aligning teams with client goals, all while maintaining a with a focus on efficiency and continuous
               improvement.
               </p>
+              <div className="flex-chip">
+                <span className="chip">Scrum</span>
+                <span className="chip">PMP</span>
+                <span className="chip">Documentation</span>
+                <span className="chip">Agile Methodologies</span>
+                <span className="chip">Poker Planning</span>
+                <span className="chip">Backlog Managment</span>
+                <span className="chip">Jira</span>
+                <span className="chip">Trello</span>
+              </div>
             </div>
           </motion.div>
 
@@ -189,11 +211,20 @@ const About = ({ id, title }) => {
 
             <div className="simple">
               <p>
-              I am an experienced eCommerce specialist with expertise in both Shopify and WordPress,
+              I am an experienced E-Commerce specialist with expertise in both Shopify and WordPress,
               specializing in building and customizing high-performance online stores. With a deep
-              understanding of eCommerce platforms, I excel in creating seamless shopping experiences,
+              understanding of E-Commerce platforms, I excel in creating seamless shopping experiences,
               optimizing store functionality, and driving business growth.
               </p>
+              <div className="flex-chip">
+                <span className="chip">Shopify</span>
+                <span className="chip">Wordpress</span>
+                <span className="chip">SEO</span>
+                <span className="chip">SMM</span>
+                <span className="chip">Figma</span>
+                <span className="chip">Canva</span>
+                <span className="chip">Meta Ads</span>   
+              </div>
             </div>
           </motion.div>
         </div>

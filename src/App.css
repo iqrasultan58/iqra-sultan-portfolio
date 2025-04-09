@@ -135,6 +135,19 @@
     transform: translateY(-20px);
   }
 }
+.animate-border-beam {
+  animation: border-beam var(--duration) linear infinite;
+}
+
+@keyframes border-beam {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
 .btn_hire_me {
   display: inline-flex;
   justify-content: center;
@@ -312,6 +325,24 @@
   color: #a9adb8;
   font-size: 14px;
   margin-bottom: -6px;
+}
+
+.flex-chip {
+  margin: 10px;
+  line-height: 2;
+  word-wrap: break-word;
+
+}
+.chip {
+  background-color: #e5e7eb;
+  color: #070d1b;
+  padding: 8px 12px;
+  margin:4px;
+  font-size: 10px;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 25px;
 }
 
 .skills {
@@ -914,4 +945,4 @@
 .cardContainer .card .body .imageContainer img {
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=App.css.map */
+}

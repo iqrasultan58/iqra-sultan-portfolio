@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BorderBeam } from "./BorderBeam";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { FaGithub, FaInstagram, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import dp from "../img/dp.png";
 
 const Home = ({ id, title }) => {
@@ -111,16 +111,10 @@ const Home = ({ id, title }) => {
             <h2
               className="my-2 text-2xl md:text-3xl lg:text-4xl typewrite  w-fit"
               data-period="2000"
-              data-type='["Full Stack Developer"", ", "Technical Project Manager"]'
+              data-type='["Full Stack Developer", "Software Project Manager", "E-Commerce Specialist"]'
             >
               Full Stack Developer
             </h2>
-
-            <h1>
-              <a href="" className="typewrite">
-                <span className="wrap"></span>
-              </a>
-            </h1>
 
             <div className="pt-4 relative flex">
               {/* Apply Beam here for the animated border */}
@@ -158,7 +152,7 @@ const Home = ({ id, title }) => {
                     href="https://www.linkedin.com/in/iqrasultan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative p-3 rounded-full bg-blue-600 text-white flex justify-center items-center"
+                    className="relative p-3 rounded-full text-white bg-gradient-to-r from-blue-500 to-white-600 flex justify-center items-center"
                     onClick={() => trackClick("LinkedIn")}
                   >
                     <FaLinkedin size={25} />
@@ -184,20 +178,20 @@ const Home = ({ id, title }) => {
                   onClick={() => trackClick("Instagram")}
                 >
                   <motion.a
-                    href="https://www.instagram.com/_iiqqrraa/"
+                    href="https://wa.me/923350626482"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative p-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white flex justify-center items-center"
+                    className="relative p-3 rounded-full bg-gradient-to-r from-green-500 to-white-600 text-white flex justify-center items-center"
                   >
-                    <FaInstagram size={25} />
+                    <FaWhatsapp size={25} />
                     <BorderBeam
                       className="absolute inset-0"
                       size={180}
                       duration={15}
                       anchor={90}
                       borderWidth={2}
-                      colorFrom="#f56040"
-                      colorTo="#9c40ff"
+                      colorFrom="#21dc00"
+                      colorTo="#f4f4f4"
                       delay={0.2}
                     />
                   </motion.a>
