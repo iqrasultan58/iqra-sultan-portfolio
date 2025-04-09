@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from 'framer-motion'
 import { BorderBeam } from "./BorderBeam";
 import '../App.css';
-import dp from "../img/Untitled design (3).png";
 
 const About = ({ id, title }) => {
     

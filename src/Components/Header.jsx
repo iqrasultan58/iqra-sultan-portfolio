@@ -79,7 +79,7 @@ const Header = () => {
                   Resume
                 </Link>
               </li>
-              {/* <li className="uppercase px-4 cursor-pointer">
+              <li className="uppercase px-4 cursor-pointer">
                 <Link
                   activeClass="active"
                   to="portfolio"
@@ -91,7 +91,7 @@ const Header = () => {
                 >
                   Portfolio
                 </Link>
-              </li> */}
+              </li>
               <li className="uppercase px-4 cursor-pointer">
                 <Link
                   activeClass="active"
