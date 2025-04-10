@@ -40,50 +40,41 @@ const Resume = ({ id, title }) => {
 
           <div className="side">
             <div className="degree " data-aos="fade-up">
-                <h2>Co Founder and Managing Partner</h2>
+                <h2>Co-Founder and Managing Partner</h2>
                 <h3>January 2025 - Present</h3>
                 <b>Code Factory</b>
-                <p>
-                As a Managing Partner, I oversaw multiple client accounts, managing a diverse team of developers, designers. I ensured smooth execution of projects by assigning tasks based on team strengths, tracking progress using Jira, and maintaining clear communication between clients and internal teams. I played a key role in onboarding new clients, setting up workflows, reporting results, and ensuring deliverables aligned with both timelines and expectations. My leadership style focused on clarity, accountability, and collaboration, helping to create a structured yet flexible environment where projects were delivered efficiently and client satisfaction remained a top priority.                </p>
+                {/* <p> */}
+                {/* As a Managing Partner, I oversaw multiple client accounts, managing a diverse team of developers, designers. I ensured smooth execution of projects by assigning tasks based on team strengths, tracking progress using Jira, and maintaining clear communication between clients and internal teams. I played a key role in onboarding new clients, setting up workflows, reporting results, and ensuring deliverables aligned with both timelines and expectations. My leadership style focused on clarity, accountability, and collaboration, helping to create a structured yet flexible environment where projects were delivered efficiently and client satisfaction remained a top priority.                </p> */}
               </div>
             <div className="degree " data-aos="fade-up">
               <h2>Technical Lead | Scrum Master</h2>
               <h3>Feburary 2023 - September 2024</h3>
               <b>Frizhub</b>
-              <p>
-              As a Tech PM, I led a cross-functional team of 15, driving Agile delivery through Scrum ceremonies and efficient backlog management using Jira and Confluence. I translated business requirements into technical tasks, managed timelines, and ensured smooth execution by resolving blockers. My strategic leadership and clear communication ensured seamless collaboration and stakeholder alignment for successful project delivery.
-              </p>
+              {/* <p> */}
+              {/* As a Tech PM, I led a cross-functional team of 15, driving Agile delivery through Scrum ceremonies and efficient backlog management using Jira and Confluence. I translated business requirements into technical tasks, managed timelines, and ensured smooth execution by resolving blockers. My strategic leadership and clear communication ensured seamless collaboration and stakeholder alignment for successful project delivery. */}
+              {/* </p> */}
             </div>
 
             <div className="degree " data-aos="fade-up">
               <h2>Software Engineer</h2>
               <h3>November 2021 - March 2023</h3>
               <b>Synavos</b>
-              <p>
-              Worked as a Frontend Developer using JavaScript, React JS, Redux, Next JS, JEST, Bootstrap, and SCSS, delivering end-to-end solutions from design to deployment. Collaborated with UI/UX designers and backend teams to build responsive, high-performance web applications, ensuring seamless integration and optimal user experience. Mentored junior engineers, conducted PR reviews, and utilized Bitbucket for version control and team collaboration.
-              </p>
+              {/* <p> */}
+              {/* Worked as a Frontend Developer using JavaScript, React JS, Redux, Next JS, JEST, Bootstrap, and SCSS, delivering end-to-end solutions from design to deployment. Collaborated with UI/UX designers and backend teams to build responsive, high-performance web applications, ensuring seamless integration and optimal user experience. Mentored junior engineers, conducted PR reviews, and utilized Bitbucket for version control and team collaboration. */}
+              {/* </p> */}
             </div>
 
             <div className="degree" data-aos="fade-up">
               <h2>Software Engineer</h2>
               <h3>October 2019 - October 2021</h3>
               <b>Engin Technologies</b>
-              <p>
+              {/* <p>
               Worked as a Full Stack Developer, collaborating with development and QA teams to deliver robust,
               scalable solutions across all phases of the SDLC. Designed scalable data models using JavaScript,
               ReactJS, Redux, Ruby on Rails, and PostgreSQL, while enhancing functionality with complex
               algorithms in Scala. Provided continuous support throughout planning, development, and testing
               to ensure seamless project execution.
-              </p>
-            </div>
-
-            <div className="degree1" data-aos="fade-up">
-              <h2>Freelancer</h2>
-              <h3>October 2015 - Present</h3>
-              <b>Freelancers</b>
-              <p>
-              Working as a Freelance Full Stack Developer, collaborating remotely with development and QA teams to deliver robust and scalable solutions across all phases of the software development lifecycle. Designed and implemented scalable data models using JavaScript, ReactJS, Redux, Ruby on Rails, and PostgreSQL, while optimizing performance with complex algorithms written in Scala. Actively contributed to project planning, development, and testing phases, ensuring smooth communication and timely delivery for each milestone.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

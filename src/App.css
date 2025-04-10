@@ -31,7 +31,7 @@
 
 .home_main {
   background-image: url("./img/hero-bg (1).jpg");
-  height: 120vh;
+  /* height: 120vh; */
   max-width: 100%;
 }
 @media (max-width: 600px) {
@@ -48,7 +48,7 @@
 }
 .home_main .home_content {
   align-items: center;
-  height: 120vh;
+  /* height: 120vh; */
   display: flex;
   overflow: hidden;
 }
@@ -738,6 +738,7 @@
   flex-wrap: wrap;
   position: relative;
 }
+
 .portfolio .box_hover {
   position: absolute;
   width: 320px;
@@ -767,8 +768,8 @@
   font-size: 30px;
 }
 .portfolio .box {
-  width: 320px;
-  height: 230px;
+  width: 300px;
+  height: 300px;
   margin: 12px;
   text-decoration: none;
   border-radius: 10px !important;
@@ -778,6 +779,12 @@
 .portfolio .box img {
   border-radius: 6px;
 }
+
+.portfolio .project-desc {
+  margin: 12px;
+}
+
+
 @media (max-width: 800px) {
   .portfolio .box {
     margin: 12px auto;

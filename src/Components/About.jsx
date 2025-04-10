@@ -33,7 +33,7 @@ const About = ({ id, title }) => {
             </h3>
 
             <p className="max-w-full text-[15px]">
-              I’m a results-driven Senior Full Stack Developer with a strong background in designing
+              I’m a results-driven <b>Full Stack Developer</b> with a strong background in designing
               and developing scalable, high-performance web applications. With years of hands-on
               experience in MERN Stack I specialize in building robust digital solutions that blend
               functionality with exceptional user experience.
@@ -47,7 +47,7 @@ const About = ({ id, title }) => {
               applications, managing complex integrations, or optimizing performance, I’m passionate
               about delivering solutions that create real impact.
 
-              Let’s build something amazing together.
+             <br/> Let’s build something amazing together.
             </p>
 
             <div className="info pt-2">

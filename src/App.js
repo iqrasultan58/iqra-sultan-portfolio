@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Portfolio from "./Components/Portfolio";
+import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import "animate.css";
@@ -56,6 +57,7 @@ function App() {
         <Skills />
         <Resume id="resume" title="Resume" />
         <Portfolio id="portfolio" title="Portfolio" />
+        <Testimonial id="testimonial" title="Testimonials"/>
         <Contact id="contact" title="Contact" />
         <Footer />
       </div>
