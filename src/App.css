@@ -48,7 +48,7 @@
 }
 .home_main .home_content {
   align-items: center;
-  /* height: 120vh; */
+  height: 120vh;
   display: flex;
   overflow: hidden;
 }
