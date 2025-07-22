@@ -17,37 +17,45 @@ const About = ({ id, title }) => {
 
         <div className="px-4  md:px-8 lg:px-16 xl:px-0 xl:w-[1220px] xl:mx-auto pt-10 lg:flex lg:flex-row  md:flex-row text-white">
           <div className="mb-6 md:mb-0 " data-aos="zoom-in">
-          {/* <img src={dp} alt="ats" className="w-[100%] h-[100%]" /> */}
+            {/* <img src={dp} alt="ats" className="w-[100%] h-[100%]" /> */}
           </div>
 
-          <div
-            className=" sm:p-10 about_content  "
-            data-aos="zoom-in"
-          >
+          <div className=" sm:p-10 about_content  " data-aos="zoom-in">
             <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4">
               Hello! I'm Iqra Sultan
             </h2>
 
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4">
-              Full Stack Developer | Software Project Manager | ECommerce Specialist
+              Software Project Manager | ECommerce Specialist | Full-Stack
+              Developer
             </h3>
 
             <p className="max-w-full text-[15px]">
-              I’m a results-driven <b>Full Stack Developer</b> with a strong background in designing
-              and developing scalable, high-performance web applications. With years of hands-on
-              experience in MERN Stack I specialize in building robust digital solutions that blend
-              functionality with exceptional user experience.
+              As a results-oriented <b>Project Manager</b> with a deep focus on
+              e-commerce, I excel at leading end-to-end digital initiatives that
+              drive business growth and customer satisfaction. My experience
+              spans managing complex e-commerce projects, from strategic
+              planning and team leadership to seamless execution and delivery. I
+              prioritize clear communication, cross-functional collaboration,
+              and agile methodologies to ensure projects are delivered on time
+              and aligned with business goals.
             </p>
             <p>
-              Beyond development, I bring strategic thinking and leadership to every project—ensuring
-              timely delivery, efficient workflows, and alignment with business goals.
+              Leveraging my strong background in full-stack development, I also
+              bring hands-on technical expertise to the table—designing,
+              developing, and optimizing scalable, high-performance web
+              applications tailored for the e-commerce domain. My dual
+              capability allows me to bridge the gap between business and
+              technology, ensuring that every digital solution not only meets
+              functional requirements but also delivers exceptional user
+              experiences and measurable results.
             </p>
-            <p>Having also worked in project management roles, I understand the importance of clear
-              communication, collaboration, and agile execution. Whether it’s creating custom
-              applications, managing complex integrations, or optimizing performance, I’m passionate
-              about delivering solutions that create real impact.
-
-             <br/> Let’s build something amazing together.
+            <p>
+              Whether orchestrating large-scale platform migrations, integrating
+              third-party solutions, or enhancing site performance, I am
+              passionate about creating digital ecosystems that empower brands
+              and drive real impact.
+              <br /> Let’s build something amazing together.
             </p>
 
             <div className="info pt-2">
@@ -76,13 +84,13 @@ const About = ({ id, title }) => {
                   Download CV
                 </a> */}
 
-                <a
+                {/* <a
                   href="https://www.upwork.com/freelancers/~01a562478db5ce46df"
                   target="blank"
                   className="btn btn_hire_me"
                 >
                   Hire Me
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -96,50 +104,6 @@ const About = ({ id, title }) => {
         </div>
 
         <div className="px-4 md:px-8 lg:px-16 xl:px-0 xl:w-[1220px] xl:mx-auto pt-10 pb-24 flex justify-around flex-wrap lg:flex-row services">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.04, ease: "easeInOut" }}
-            className="box relative overflow-hidden" // Add relative and overflow-hidden for positioning
-            data-aos="zoom-in"
-          >
-            <BorderBeam
-              className="absolute inset-0" // Ensures the beam covers the card
-              size={200}
-              duration={15}
-              anchor={90}
-              borderWidth={2} // Adjust border width to fit your design
-              colorFrom="#ffaa40"
-              colorTo="#9c40ff"
-              delay={0.2} // You can modify delay for each card if needed
-            />
-            <div className="box_icon">
-              <i className="fa-solid fa-code"></i>
-            </div>
-
-            <div className="bold">
-              <b className="">Full Stack Development</b>
-            </div>
-
-            <div className="simple">
-              <p>
-              I am a Full Stack web developer with extensive experience in building web applications from
-              scratch using MERN stack. I excel in integrating frontend and backend components seamlessly
-              delivering scalable, efficient, and user-focused solutions with high performance and quality.
-              </p>
-              <div className="flex-chip">
-                <span className="chip">React JS</span>
-                <span className="chip">JavaScript</span>
-                <span className="chip">Node JS</span>
-                <span className="chip">MongoDB</span>
-                <span className="chip">HTML</span>
-                <span className="chip">CSS</span>
-                <span className="chip">Vercel</span>
-                <span className="chip">Git</span>
-                <span className="chip">Postman</span>
-              </div>
-            </div>
-          </motion.div>
-
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.04, ease: "easeInOut" }}
@@ -166,10 +130,12 @@ const About = ({ id, title }) => {
 
             <div className="simple">
               <p>
-              As an experienced Project Manager and Certified Scrum Master with a strong background in leading
-              software development projects, I specialize in fostering collaboration, ensuring timely delivery,
-              and aligning teams with client goals, all while maintaining a with a focus on efficiency and continuous
-              improvement.
+                As an experienced Project Manager and Certified Scrum Master
+                with a strong background in leading software development
+                projects, I specialize in fostering collaboration, ensuring
+                timely delivery, and aligning teams with client goals, all while
+                maintaining a with a focus on efficiency and continuous
+                improvement.
               </p>
               <div className="flex-chip">
                 <span className="chip">Scrum</span>
@@ -210,10 +176,12 @@ const About = ({ id, title }) => {
 
             <div className="simple">
               <p>
-              I am an experienced E-Commerce specialist with expertise in both Shopify and WordPress,
-              specializing in building and customizing high-performance online stores. With a deep
-              understanding of E-Commerce platforms, I excel in creating seamless shopping experiences,
-              optimizing store functionality, and driving business growth.
+                I am an experienced E-Commerce specialist with expertise in both
+                Shopify and WordPress, specializing in building and customizing
+                high-performance online stores. With a deep understanding of
+                E-Commerce platforms, I excel in creating seamless shopping
+                experiences, optimizing store functionality, and driving
+                business growth.
               </p>
               <div className="flex-chip">
                 <span className="chip">Shopify</span>
@@ -222,7 +190,53 @@ const About = ({ id, title }) => {
                 <span className="chip">SMM</span>
                 <span className="chip">Figma</span>
                 <span className="chip">Canva</span>
-                <span className="chip">Meta Ads</span>   
+                <span className="chip">Meta Ads</span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.04, ease: "easeInOut" }}
+            className="box relative overflow-hidden" // Add relative and overflow-hidden for positioning
+            data-aos="zoom-in"
+          >
+            <BorderBeam
+              className="absolute inset-0" // Ensures the beam covers the card
+              size={200}
+              duration={15}
+              anchor={90}
+              borderWidth={2} // Adjust border width to fit your design
+              colorFrom="#ffaa40"
+              colorTo="#9c40ff"
+              delay={0.2} // You can modify delay for each card if needed
+            />
+            <div className="box_icon">
+              <i className="fa-solid fa-code"></i>
+            </div>
+
+            <div className="bold">
+              <b className="">Full Stack Development</b>
+            </div>
+
+            <div className="simple">
+              <p>
+                I am a Full Stack web developer with extensive experience in
+                building web applications from scratch using MERN stack. I excel
+                in integrating frontend and backend components seamlessly
+                delivering scalable, efficient, and user-focused solutions with
+                high performance and quality.
+              </p>
+              <div className="flex-chip">
+                <span className="chip">React JS</span>
+                <span className="chip">JavaScript</span>
+                <span className="chip">Node JS</span>
+                <span className="chip">MongoDB</span>
+                <span className="chip">HTML</span>
+                <span className="chip">CSS</span>
+                <span className="chip">Vercel</span>
+                <span className="chip">Git</span>
+                <span className="chip">Postman</span>
               </div>
             </div>
           </motion.div>

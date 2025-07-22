@@ -1,4 +1,12 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaSnapchat, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaEnvelope,
+  FaSnapchat,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { SiFiverr } from "react-icons/si";
@@ -9,6 +17,8 @@ import { FaUpwork } from "react-icons/fa6";
 const Footer = () => {
   // Create separate states for each icon's position
   const [linkedinPosition, setLinkedinPosition] = useState({ x: 0, y: 0 });
+  const [whatsappPosition, setWhatsappPosition] = useState({ x: 0, y: 0 });
+    const [emailPosition, setEmailPosition] = useState({ x: 0, y: 0 });
   const [youtubePosition, setYoutubePosition] = useState({ x: 0, y: 0 });
   const [snapchatPosition, setSnapchatPosition] = useState({ x: 0, y: 0 });
   const [instagramPosition, setInstagramPosition] = useState({ x: 0, y: 0 });
@@ -43,7 +53,10 @@ const Footer = () => {
   
 
   return (
-    <div className='relative h-[300px] ' style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
+    <div
+      className="relative h-[300px] "
+      style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+    >
       <footer className="bg_light_blue text-white py-12 text-center fixed bottom-0 h-[300px] w-full px-2">
         <div className="flex justify-center items-center mb-6">
           <span className="text-3xl sm:text-4xl font-bold">
@@ -52,13 +65,47 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-8 mb-4">
-          <a  onClick={() => trackClick("LinkedIn")} href="https://www.linkedin.com/in/iqrasultan" target="_blank" rel="noopener noreferrer" >
+          <a
+            onClick={() => trackClick("Whatsapp")}
+            href="https://wa.me/923350626482"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div
+              style={{ position: "relative" }}
+              onMouseMove={(e) => handleMouse(e, setWhatsappPosition)}
+              onMouseLeave={() => resetPosition(setWhatsappPosition)}
+              animate={{ ...whatsappPosition, scale: 1, rotate: 0 }} // Reset scale and rotation
+              whileHover={{
+                scale: animationProps.scale,
+                rotate: animationProps.rotate,
+              }} // Scale and rotate on hover
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                mass: 0.1,
+              }}
+            >
+              <FaWhatsapp className="text-white text-4xl sm:text-5xl" />
+            </motion.div>
+          </a>
+
+          <a
+            onClick={() => trackClick("LinkedIn")}
+            href="https://www.linkedin.com/in/iqrasultan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setLinkedinPosition)}
               onMouseLeave={() => resetPosition(setLinkedinPosition)}
               animate={{ ...linkedinPosition, scale: 1, rotate: 0 }} // Reset scale and rotation
-              whileHover={{ scale: animationProps.scale, rotate: animationProps.rotate }} // Scale and rotate on hover
+              whileHover={{
+                scale: animationProps.scale,
+                rotate: animationProps.rotate,
+              }} // Scale and rotate on hover
               transition={{
                 type: "spring",
                 stiffness: 150,
@@ -67,6 +114,32 @@ const Footer = () => {
               }}
             >
               <FaLinkedin className="text-white text-4xl sm:text-5xl" />
+            </motion.div>
+          </a>
+
+          <a
+            onClick={() => trackClick("Email")}
+            href="mailto:iqrasultan58@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div
+              style={{ position: "relative" }}
+              onMouseMove={(e) => handleMouse(e, setEmailPosition)}
+              onMouseLeave={() => resetPosition(setEmailPosition)}
+              animate={{ ...emailPosition, scale: 1, rotate: 0 }} // Reset scale and rotation
+              whileHover={{
+                scale: animationProps.scale,
+                rotate: animationProps.rotate,
+              }} // Scale and rotate on hover
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                mass: 0.1,
+              }}
+            >
+              <FaEnvelope className="text-white text-4xl sm:text-5xl" />
             </motion.div>
           </a>
 
@@ -88,7 +161,7 @@ const Footer = () => {
             </motion.div>
           </a> */}
 
-          <a  onClick={() => trackClick("GitHub")} href="https://github.com/iqrasultan58" target="_blank" rel="noopener noreferrer">
+          {/* <a  onClick={() => trackClick("GitHub")} href="https://github.com/iqrasultan58" target="_blank" rel="noopener noreferrer">
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setSnapchatPosition)}
@@ -104,15 +177,23 @@ const Footer = () => {
             >
               <FaGithub className="text-white text-4xl sm:text-5xl" />
             </motion.div>
-          </a>
+          </a> */}
 
-          <a onClick={() => trackClick("Instagram")} href="https://www.instagram.com/_iiqqrraa/" target="_blank" rel="noopener noreferrer">
+          {/* <a
+            onClick={() => trackClick("Instagram")}
+            href="https://www.instagram.com/_iiqqrraa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setInstagramPosition)}
               onMouseLeave={() => resetPosition(setInstagramPosition)}
               animate={{ ...instagramPosition, scale: 1, rotate: 0 }} // Reset scale and rotation
-              whileHover={{ scale: animationProps.scale, rotate: animationProps.rotate }} // Scale and rotate on hover
+              whileHover={{
+                scale: animationProps.scale,
+                rotate: animationProps.rotate,
+              }} // Scale and rotate on hover
               transition={{
                 type: "spring",
                 stiffness: 150,
@@ -122,9 +203,9 @@ const Footer = () => {
             >
               <FaInstagram className="text-white text-4xl sm:text-5xl" />
             </motion.div>
-          </a>
+          </a> */}
 
-          <a onClick={() => trackClick("Upwork")} href="https://www.upwork.com/freelancers/~01a562478db5ce46df" target="_blank" rel="noopener noreferrer">
+          {/* <a onClick={() => trackClick("Upwork")} href="https://www.upwork.com/freelancers/~01a562478db5ce46df" target="_blank" rel="noopener noreferrer">
             <motion.div
               style={{ position: "relative" }}
               onMouseMove={(e) => handleMouse(e, setUpworkPosition)}
@@ -140,16 +221,14 @@ const Footer = () => {
             >
               <FaUpwork className="text-white text-4xl sm:text-5xl" />
             </motion.div>
-          </a>
+          </a> */}
         </div>
-        
+
         <div className="mb-2">
           <a href="mailto:hiqrasultan58@gmail.com">iqrasultan58@gmail.com</a>
         </div>
 
-        <div className="mb-2">
-          © 2025 Iqra Sultan. All rights reserved.
-        </div>
+        <div className="mb-2">© 2025 Iqra Sultan. All rights reserved.</div>
       </footer>
     </div>
   );

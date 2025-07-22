@@ -4,6 +4,7 @@ import { BorderBeam } from "./BorderBeam";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import dp from "../img/dp.png";
+import { FaEnvelope } from "react-icons/fa";
 
 const Home = ({ id, title }) => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -93,8 +94,7 @@ const Home = ({ id, title }) => {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className="banner"
-          >
-          </motion.div>
+          ></motion.div>
         </div>
 
         <div className="px-4 md:px-8 lg:px-16 pt-10 pb-10 home_content justify-between y">
@@ -105,9 +105,7 @@ const Home = ({ id, title }) => {
             <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl ">
               Iqra Sultan
             </h1>
-            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl ">
-              
-            </h1>
+            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl "></h1>
             <h2
               className="my-2 text-2xl md:text-3xl lg:text-4xl typewrite  w-fit"
               data-period="2000"
@@ -119,7 +117,7 @@ const Home = ({ id, title }) => {
             <div className="pt-4 relative flex">
               {/* Apply Beam here for the animated border */}
 
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.7 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -138,14 +136,14 @@ const Home = ({ id, title }) => {
                   delay={0.2} // 
                 />
                 Hire Me
-              </motion.a>
+              </motion.a> */}
 
               <div className=" flex">
                 {/* LinkedIn Icon */}
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 10 }}
                   className="relative mx-4"
                 >
                   <motion.a
@@ -173,7 +171,7 @@ const Home = ({ id, title }) => {
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 10 }}
                   className="relative"
                   onClick={() => trackClick("Instagram")}
                 >
@@ -197,7 +195,35 @@ const Home = ({ id, title }) => {
                   </motion.a>
                 </motion.div>
 
+                {/* Email Icon */}
                 <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                  className="relative"
+                  onClick={() => trackClick("Email")}
+                >
+                  <motion.a
+                    href="mailto:iqrasultan58@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative mx-4 p-3 rounded-full bg-black text-white flex justify-center items-center"
+                  >
+                    <FaEnvelope size={25} />
+                    <BorderBeam
+                      className="absolute inset-0"
+                      size={180}
+                      duration={15}
+                      anchor={90}
+                      borderWidth={2}
+                      colorFrom="white"
+                      colorTo="black"
+                      delay={0.2}
+                    />
+                  </motion.a>
+                </motion.div>
+
+                {/* <motion.div
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 10 }}
@@ -222,11 +248,9 @@ const Home = ({ id, title }) => {
                       delay={0.2}
                     />
                   </motion.a>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
-
-
           </div>
 
           <div className="home_img hidden md:block" onClick={handleClick}>
@@ -234,8 +258,9 @@ const Home = ({ id, title }) => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="banner">
-             <img src={dp} alt="ats" className="w-[100%] h-[100%]" />
+              className="banner"
+            >
+              <img src={dp} alt="ats" className="w-[100%] h-[100%]" />
             </motion.div>
           </div>
         </div>
