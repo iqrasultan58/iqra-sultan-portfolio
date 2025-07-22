@@ -144,14 +144,14 @@ const Contact = ({ id, title }) => {
               <span>Linkedin</span>
             </a>
 
-            <a
+            {/* <a
               href="https://github.com/iqrasultan58"
               className="social"
             >
               <i class="fa-brands fa-github"></i>
 
               <span>Github</span>
-            </a>
+            </a> */}
 
             <a
               href="https://join.skype.com/invite/xOOu7mFf9jbf"
